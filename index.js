@@ -8,6 +8,7 @@ const keys = require('./config/keys');
 require('./models/User');
 require('./models/Blog');
 require('./services/passport');
+require('./services/cache');
 
 mongoose.connect('mongodb://localhost/advanced_node').then(() => console.log('Connected to MongoDB'), err => console.log(`DB Connection Error: ${err}`));
 
